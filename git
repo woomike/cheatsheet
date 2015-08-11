@@ -1,0 +1,4 @@
+## Delete a branch remotely ##
+git push origin --delete <branchName>
+git push origin :<branchName>
+
