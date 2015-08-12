@@ -2,7 +2,9 @@
 
 1) Touch a file 'i' somewhere in your $PATH (/usr/local/bin/i)
 
-1a) mkdir 'cheatsheet' in your Home
+1a) chmod 755 the new 'i' file
+
+1b) mkdir 'cheatsheet' in your Home
 
 2) Inside write:
 
