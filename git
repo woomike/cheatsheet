@@ -2,3 +2,5 @@
 git push origin --delete <branchName>
 git push origin :<branchName>
 
+## Amend a git commit (not pushed)
+git commit --amend -m "This is the new message"
