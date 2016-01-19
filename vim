@@ -10,4 +10,4 @@
 :vsp            # Split vertically
 
 ## Open another file ##
-:tabe filename
+:e [filename]

@@ -1,6 +1,41 @@
+# Configure git for vim commit message saving
+git config --global core.editor /usr/bin/vim
+
 ## Delete a branch remotely ##
 git push origin --delete <branchName>
 git push origin :<branchName>
 
+## Clear deleted branches
+git fetch origin --prune
+
 ## Amend a git commit (not pushed)
 git commit --amend -m "This is the new message"
+
+## git tag
+git tag -a -m "v1.1.3" v1.1.3
+git push <remote> --tags
+
+## delete tag
+git tag -d v1.1.3
+git push origin :refs/tags/v1.1.3
+
+## show tags and commits
+git show-ref --tags
+
+## Hub Commands  https://github.com/ingydotnet/git-hub
+git hub help                        # Show this awesome documentation
+git hub setup                       # Config dialog. Do this first!
+
+git hub user <user>                 # Get info about a user
+git hub repos <owner>               # List recent repositories
+git hub repo-new <repo>             # Create a new repository
+git hub fork <owner>/<repo>         # Fork a repository
+git hub clone <owner>/<repo>        # Clone a GitHub repository
+
+git hub repo-edit <repo> description 'New Description'    # Set/Change your repo description
+git hub repo-delete <owner>/<repo>                        # Delete a repository
+git hub trust ingydotnet                                  # Add collaborators to repo
+
+git hub pr-new --base [branch-name-of-original]     # Git hub Create new Pull Request from fork
+git hub pr-list sanguinebio/[repo]                  # Git hub list all current Pull Requests from original repo
+git hub pr-diff sanguinebio/[repo] [pr number]      # Git hub view pull request differences
