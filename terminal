@@ -1,3 +1,8 @@
 ## Set Case-Insensitive Auto Complete (must restart) ##
 echo "set completion-ignore-case On" >> ~/.inputrc
 
+## Copies to home or foobar location
+scp [filename] [stage-api]:foobar
+
+## Copies from box to your location
+scp [stage-api]:foobar .
