@@ -25,17 +25,8 @@ git show-ref --tags
 ## Show list of commmit differences only goes 1 way
 git log woomike/master..dev -X
 
-## Hub Commands  https://github.com/ingydotnet/git-hub
-git hub help                        # Show this awesome documentation
-git hub setup                       # Config dialog. Do this first!
+## Git reset and delete new files and folders
+git clean -d -x -f
 
-git hub user <user>                 # Get info about a user
-git hub repo-new <repo>             # Create a new repository
-git hub fork <owner>/<repo>         # Fork a repository
-git hub clone <owner>/<repo>        # Clone a GitHub repository
-
-git hub repo-edit <repo> description 'New Description'    # Set/Change your repo description
-git hub repo-delete <owner>/<repo>                        # Delete a repository
-git hub trust ingydotnet                                  # Add collaborators to repo
-
-git hub pr-new --base [branch-name-of-original]     # Git hub Create new Pull Request from fork
+# Git hub Create new Pull Request from fork
+git hub pr-new --base [branch-name-of-original]
