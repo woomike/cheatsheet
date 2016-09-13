@@ -1,0 +1,8 @@
+# Kill extra volumes
+docker volume ls -f dangling=true -q | xargs docker volume rm
+
+# Delete all containers (add -f to force)
+docker rm $(docker ps -a -q)
+
+# Delete all images (add -f to force)
+docker rmi $(docker images -q)
