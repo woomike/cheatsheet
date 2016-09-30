@@ -30,3 +30,10 @@ git clean -d -x -f
 
 # Git hub Create new Pull Request from fork
 git hub pr-new --base [branch-name-of-original]
+
+# Git reset local commits (REMOVES code changes)
+git reset --hard origin/branch-name
+
+# Git reset local commit (keeps code changes)
+git reset HEAD^
+

@@ -6,3 +6,6 @@ scp [filename] [stage-api]:foobar
 
 ## Copies from box to your location
 scp [stage-api]:foobar .
+
+## Check storage available
+free -m
