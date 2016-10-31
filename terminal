@@ -9,3 +9,6 @@ scp [stage-api]:foobar .
 
 ## Check storage available
 free -m
+
+## Forever logs
+forever -f logs app.js
