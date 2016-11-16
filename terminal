@@ -12,3 +12,6 @@ free -m
 
 ## Forever logs
 forever -f logs app.js
+
+## Copy ssh key
+pbcopy < ~/.ssh/id_rsa.pub
